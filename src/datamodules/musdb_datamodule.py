@@ -79,6 +79,9 @@ class MusdbDataModule(LightningDataModule):
                     move(trainset_path.joinpath(track), validset_path.joinpath(track))
         else:
             valid_files = os.listdir(validset_path)
+            print(valid_files)
+            print(kwargs['validation_set'])
+            
             assert set(valid_files) == set(kwargs['validation_set'])
 
     def setup(self, stage: Optional[str] = None):

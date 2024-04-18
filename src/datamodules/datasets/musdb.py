@@ -43,7 +43,7 @@ class MusdbDataset(Dataset):
     __metaclass__ = ABCMeta
 
     def __init__(self, data_dir, chunk_size):
-        self.source_names = ['bass', 'drums', 'other', 'vocals']
+        self.source_names = ['bass', 'drums', 'other', 'vocals', 'guitar', 'piano', 'strings']
         self.chunk_size = chunk_size
         self.musdb_path = Path(data_dir)
 
