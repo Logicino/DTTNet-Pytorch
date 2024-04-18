@@ -18,6 +18,9 @@ source_names:
   - drums
   - other
   - vocals
+  - guitar
+  - piano
+  - strings
 target_name: ${model.target_name}
 
 external_datasets: null
@@ -30,8 +33,8 @@ num_workers: 0
 pin_memory: False
 
 aug_params:
-  - 2   # maximum pitch shift in semitones (-x < shift param < x)
-  - 20  # maximum time stretch percentage (-x < stretch param < x)
+  - 0 #2   # maximum pitch shift in semitones (-x < shift param < x)
+  - 0 #20  # maximum time stretch percentage (-x < stretch param < x)
 
 validation_set:
   - Actions - One Minute Smile
